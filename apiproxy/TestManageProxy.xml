@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="TestManageProxy">
+    <Basepaths>/apibasepath</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1583370585893</CreatedAt>
+    <CreatedBy>sanjaymarathe007@gmail.com</CreatedBy>
+    <DisplayName>TestManageProxy</DisplayName>
+    <LastModifiedAt>1583370585893</LastModifiedAt>
+    <LastModifiedBy>sanjaymarathe007@gmail.com</LastModifiedBy>
+    <Policies>
+        <Policy>AM-Response</Policy>
+        <Policy>RF-BadRequest</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>endpoint1</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

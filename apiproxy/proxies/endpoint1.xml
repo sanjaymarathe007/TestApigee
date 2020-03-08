@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="endpoint1">
+    <Description></Description>
+    <FaultRules/>
+    <Flows>
+        <Flow name="t1">
+            <Request/>
+            <Response>
+                <Step>
+                    <FaultRules/>
+                    <Name>AM-Response</Name>
+                </Step>
+            </Response>
+            <Condition>proxy.pathsuffix MatchesPath "/t1" and request.verb = "GET"</Condition>
+        </Flow>
+        <Flow name="unknown request">
+            <Request>
+                <Step>
+                    <FaultRules/>
+                    <Name>RF-BadRequest</Name>
+                </Step>
+            </Request>
+            <Response/>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <HTTPProxyConnection>
+        <BasePath>/apibasepath</BasePath>
+        <Properties/>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>
